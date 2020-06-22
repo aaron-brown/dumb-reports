@@ -1,0 +1,35 @@
+////
+Copyright 2020 Aaron Brown
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or
+implied. See the License for the specific language governing
+permissions and limitations under the License.
+////
+= Spring Dumb Reports Example
+
+This project is just an example project to demonstrate and show use of
+`spring-dumb-reports-starter`.
+
+If viewing on `master`, you will not see much, as the examples are done in
+different feature-branches. See the `example/<dumb-reports-library>` of the
+respective `<dumb-reports-library>` that you want to see an example for.
+
+== Executing
+
+To run the example yourself, execute:
+
+[source,bash]
+----
+./gradlew clean spring-dumb-reports-example:bootRun
+
+# Using HTTPie
+http localhost:8080/example
+----

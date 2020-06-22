@@ -1,0 +1,28 @@
+////
+Copyright 2020 Aaron Brown
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or
+implied. See the License for the specific language governing
+permissions and limitations under the License.
+////
+= Dumb Reports (SLF4J)
+
+This implementation of `dumb-reports` implements a *`Report`* that wraps
+an SLF4J *Logger*.
+
+Thus, this report essentially serves as a Proxy for the Logger, albeit
+limited in capability (so not a fully-qualified Proxy). Likely useful if
+your use-case for a Report can also be fulfilled by the SLF4J Logging
+interfaces.
+
+IMPORTANT: If using log-masking, that is currently not applied to the
+           message passed to *Slf4jReport*, so likely don't use it in the
+           event you're working with sensitive data.
