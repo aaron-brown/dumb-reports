@@ -14,41 +14,48 @@ implied. See the License for the specific language governing
 permissions and limitations under the License.
 ////
 = Dumb Reports
+:toc:
+
 *Dumb Reports* is a JVM Library for creating dumb,
 simple reports programmatically. The interfaces are
 meant to be simple, and there are some packaged
 implementations.
 
 If you want fancy reports, you probably want to use
-something else. Bug if you want dumb reports, then
+something else. But if you want dumb reports, then
 you're in the right place.
 
-== Sub-Projects
+== Projects
 
-link:dumb-reports[`dumb-reports`]::
-The core project, which contains the basic
-interfaces.
+[cols="m,d", options="header"]
+.Projects
+|===
+|Project
+|Description
 
-link:dumb-reports-slf4j[`dumb-reports-slf4j`]::
-An implementation of `dumb-reports` that wraps an
-SLFJ4 Logger into a Report so you can `log` while
-you report.
+|link:dumb-reports[dumb-reports]
+|The core project, which contains the basic
+ interfaces.
 
-Useful for if your use-case is very limited and you
-are okay with bad ideas.
+|link:dumb-reports-slf4j[dumb-reports-slf4j]
+|An implementation of `dumb-reports` that wraps an
+ SLFJ4 Logger into a Report so you can `log` while
+ you report.
 
-link:dumb-reports-status[`dumb-reports-status`]::
-An implementation of `dumb-reports` that can be used
-and extended for making status reports.
+ Useful for if your use-case is very limited and you
+ are okay with bad ideas.
 
-link:spring-dumb-reports-starter[
-`spring-dumb-reports-starter`]::
-A Spring-Boot Starter for `dumb-reports`.
+|link:dumb-reports-status[dumb-reports-status]
+|An implementation of `dumb-reports` that can be used
+ and extended for making status reports.
 
-link:spring-dumb-reports-example[
-`spring-dumb-reports-example`]::
-A spring-Boot example projet that demonstrates
-`dumb-reports`.
+|link:spring-dumb-reports-starter[spring-dumb-reports-starter]
+|A Spring-Boot Starter for `dumb-reports`.
+
+|link:spring-dumb-reports-example[spring-dumb-reports-example]
+|A spring-Boot example projet that demonstrates
+ `dumb-reports`.
+|===
 
 == Version History
 
@@ -59,3 +66,5 @@ A spring-Boot example projet that demonstrates
 * Started `dumb-reports-status`
 * Started `spring-dumb-reports-starter`
 * Started `spring-dumb-reports-example`
+** Added an example for `dumb-reports-slf4j`
+** Added an example for `dumb-reports-status`
