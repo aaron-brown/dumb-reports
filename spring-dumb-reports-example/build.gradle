@@ -23,4 +23,6 @@ apply plugin: 'io.spring.dependency-management'
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation project(':spring-dumb-reports-starter')
+
+    implementation project(':dumb-reports-slf4j')
 }
