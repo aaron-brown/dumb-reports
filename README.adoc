@@ -16,6 +16,8 @@ permissions and limitations under the License.
 = Dumb Reports
 :toc:
 
+image:https://travis-ci.com/aaron-brown/dumb-reports.svg?branch=master["Build Status", link="https://travis-ci.com/aaron-brown/dumb-reports"]
+
 *Dumb Reports* is a JVM Library for creating dumb,
 simple reports programmatically. The interfaces are
 meant to be simple, and there are some packaged
