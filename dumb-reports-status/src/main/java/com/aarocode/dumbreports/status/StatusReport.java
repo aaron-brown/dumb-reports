@@ -23,11 +23,11 @@ import java.util.List;
 import java.io.Serializable;
 
 /**
- * @bold StatusReport} is for creating reports
+ * <b>StatusReport</b> is for creating reports
  * where its {@link #getEntries entries} are associated
  * with some kind of {@link StatusReportEntry#getStatus status}.
  *
- * <p>The {@bold StatusReport} itself also has a
+ * <p>The <b>StatusReport</b> itself also has a
  * {@link #getStatus} status.
  */
 public class StatusReport implements Report<StatusReportEntry>, Serializable {
@@ -50,6 +50,8 @@ public class StatusReport implements Report<StatusReportEntry>, Serializable {
 
     /**
      * Constructor.
+     *
+     * @param status Initial {@link #setStatus status}.
      *
      * Sets an initial {@link #setStatus status}.
      */
@@ -74,7 +76,7 @@ public class StatusReport implements Report<StatusReportEntry>, Serializable {
     }
 
     /**
-     * Add a {@link ReportStatusEntry} and
+     * Add a {@link StatusReportEntry} and
      * {@link #setStatus set status} at the same time.
      *
      * @param reportStatus {@link #setStatus Status}
@@ -89,7 +91,7 @@ public class StatusReport implements Report<StatusReportEntry>, Serializable {
     }
 
     /**
-     * Add a {@link ReportStatusEntry}.
+     * Add a {@link StatusReportEntry}.
      *
      * @param status Status
      * @param entry  Entry
