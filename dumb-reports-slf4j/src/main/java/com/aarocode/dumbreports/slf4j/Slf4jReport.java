@@ -24,11 +24,11 @@ import org.slf4j.Logger;
 import org.slf4j.event.Level;
 
 /**
- * {@bold Slf4jReport} enables the use of a
+ * <b>Slf4jReport</b> enables the use of a
  * {@link Report} to be used in the same manner
  * as a {@link Logger}.
  *
- * <p>{@bodl Note}: This paradigm is limited to only
+ * <p><b>Note</b>: This paradigm is limited to only
  * those {@link Logger} methods which take
  * {@code (String msg)} or
  * {@code (String msg, Throwable t)}.
@@ -64,7 +64,7 @@ public class Slf4jReport implements Report<Slf4jReportEntry>, Serializable {
     /**
      * Wraps {@link Logger#debug(String)}.
      *
-     * @param msg
+     * @param msg Log Message.
      */
     public void debug(String msg) {
         log.debug(msg);
@@ -74,8 +74,8 @@ public class Slf4jReport implements Report<Slf4jReportEntry>, Serializable {
     /**
      * Wraps {@link Logger#debug(String, Throwable)}.
      *
-     * @param msg
-     * @param t
+     * @param msg Log Message.
+     * @param t   Cause.
      */
     public void debug(String msg, Throwable t) {
         log.debug(msg, t);
@@ -85,7 +85,7 @@ public class Slf4jReport implements Report<Slf4jReportEntry>, Serializable {
     /**
      * Wraps {@link Logger#error(String)}.
      *
-     * @param msg
+     * @param msg Log Message.
      */
     public void error(String msg) {
         log.error(msg);
@@ -95,8 +95,8 @@ public class Slf4jReport implements Report<Slf4jReportEntry>, Serializable {
     /**
      * Wraps {@link Logger#error(String, Throwable)}.
      *
-     * @param msg
-     * @param t
+     * @param msg Log Message.
+     * @param t   Cause.
      */
     public void error(String msg, Throwable t) {
         log.error(msg, t);
@@ -106,7 +106,7 @@ public class Slf4jReport implements Report<Slf4jReportEntry>, Serializable {
     /**
      * Wraps {@link Logger#info(String)}.
      *
-     * @param msg
+     * @param msg Log Message.
      */
     public void info(String msg) {
         log.info(msg);
@@ -116,8 +116,8 @@ public class Slf4jReport implements Report<Slf4jReportEntry>, Serializable {
     /**
      * Wraps {@link Logger#info(String, Throwable)}.
      *
-     * @param msg
-     * @param t
+     * @param msg Log Message.
+     * @param t   Cause.
      */
     public void info(String msg, Throwable t) {
         log.info(msg, t);
@@ -127,7 +127,7 @@ public class Slf4jReport implements Report<Slf4jReportEntry>, Serializable {
     /**
      * Wraps {@link Logger#trace(String)}.
      *
-     * @param msg
+     * @param msg Log Message.
      */
     public void trace(String msg) {
         log.trace(msg);
@@ -137,8 +137,8 @@ public class Slf4jReport implements Report<Slf4jReportEntry>, Serializable {
     /**
      * Wraps {@link Logger#trace(String, Throwable)}.
      *
-     * @param msg
-     * @param t
+     * @param msg Log Message.
+     * @param t   Cause.
      */
     public void trace(String msg, Throwable t) {
         log.trace(msg, t);
@@ -148,7 +148,7 @@ public class Slf4jReport implements Report<Slf4jReportEntry>, Serializable {
     /**
      * Wraps {@link Logger#warn(String)}.
      *
-     * @param msg
+     * @param msg Log Message.
      */
     public void warn(String msg) {
         log.warn(msg);
@@ -158,8 +158,8 @@ public class Slf4jReport implements Report<Slf4jReportEntry>, Serializable {
     /**
      * Wraps {@link Logger#warn(String, Throwable)}.
      *
-     * @param msg
-     * @param t
+     * @param msg Log Message.
+     * @param t   Cause.
      */
     public void warn(String msg, Throwable t) {
         log.warn(msg, t);

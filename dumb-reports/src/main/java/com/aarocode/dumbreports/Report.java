@@ -20,19 +20,20 @@ import java.util.Collection;
 import java.util.stream.Collectors;
 
 /**
- * Describes a {@bold Report}.
+ * Describes a <b>Report</b>.
  *
- * <p>The {@bold Report} has a {@link Collection} of
- * {@bold T}s, where each {@code T} is a descrete entry
+ * <p>The <b>Report</b> has a {@link Collection} of
+ * <b>T</b>s, where each {@code T} is a descrete entry
  * within the report.
  */
 public interface Report<T> {
     /**
      * Retrieve the list of {@link T Entries}.
-     * @return Collection<T>
+     * @return {@link Collection entries}.
      */
     Collection<T> getEntries();
 
+    @SuppressWarnings("unchecked")
     default boolean add(T... entries) {
         return getEntries().addAll(Arrays.stream(entries)
             .collect(Collectors.toList()));
